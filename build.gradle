@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'top.syshub'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes(
+                "Premain-Class": "top.syshub.GetServer"
+        )
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
